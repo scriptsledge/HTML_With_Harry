@@ -1,0 +1,96 @@
+<!-- webpage using ai (gemma2) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Webpage</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .clock {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Styling for the clock (you can adjust this as needed) */
+        .clock h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello World</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/">Google</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.microsoft.com/">Microsoft</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
+
+        <div class="clock">
+            <h3>Current Time:</h3>
+            <p id="time"></p>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+        }
+
+        setInterval(updateClock, 1000); // Update the clock every second
+    </script>
+</body>
+</html>
