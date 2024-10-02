@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - HTML</title>
+    <style>
+        table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #343a40;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+  border: 2px solid black;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+tbody td {
+  color: #495057;
+  font-size: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Table in HTML</h1>
+    <table>
+        <!-- Head of the table -->
+        <thead>
+            <tr>
+                <!-- th stands for table header -->
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <!-- Body of the table -->
+        <tbody>
+            <tr>
+                <!-- td stands for table data -->
+                <td>Script Sledge</td>
+                <td>Software Developer</td>
+                <td>$70000</td>
+            </tr>
+            <tr>
+                <!-- td stands for table data -->
+                <td>Prasoon Tak</td>
+                <td>Android Developer</td>
+                <td>$60000</td>
+            </tr>
+            <tr>
+                <!-- td stands for table data -->
+                <td>Dhruv Aari</td>
+                <td>Web Developer</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <!-- td stands for table data -->
+                <td>Sonu Bhaiya</td>
+                <td>IT</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <!-- colspan is used to Span multiple cells horizontally with one cell -->
+                <!-- By default colspan is 1 -->
+                <td>Thank</td>
+                <td colspan="2">You</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

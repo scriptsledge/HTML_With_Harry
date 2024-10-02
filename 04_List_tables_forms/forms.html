@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <style>
+        body {
+          background-color: #121212;
+          color: #ffffff;
+          font-family: 'Arial', sans-serif;
+          padding: 20px;
+        }
+      
+        h1 {
+          text-align: center;
+          font-size: 2em;
+          color: #03dac6;
+        }
+      
+        form {
+          background-color: #1e1e1e;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          max-width: 600px;
+          margin: 0 auto;
+        }
+      
+        label {
+          font-size: 1.1em;
+          margin-bottom: 10px;
+          display: block;
+          color: #bbbbbb;
+        }
+      
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          background-color: #333;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+        }
+      
+        input::placeholder, textarea::placeholder {
+          color: #888;
+        }
+      
+        select {
+          height: 40px;
+        }
+      
+        input[type="radio"],
+        input[type="checkbox"] {
+          margin-right: 10px;
+        }
+      
+        a {
+          color: #03dac6;
+          text-decoration: none;
+        }
+      
+        a:hover {
+          text-decoration: underline;
+        }
+      
+        button[type="submit"] {
+          background-color: #03dac6;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          color: #000;
+          cursor: pointer;
+          font-size: 1em;
+          transition: background-color 0.3s ease;
+          width: 100%;
+        }
+      
+        button[type="submit"]:hover {
+          background-color: #018786;
+        }
+      
+        div {
+          margin-bottom: 15px;
+        }
+      
+        h3 {
+          color: #03dac6;
+          margin-bottom: 10px;
+        }
+      </style>
+      
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <!-- action attribute in form tag specify URL for form submission destination. -->
+    <form action="/submit.php">
+        <div>
+            <label for="name">Naam Kya hai?</label>
+            <input id="name" type="text" placeholder="Abhishek?" required>
+        </div>
+        <div>
+            <!-- for and id attribute helps label to associate with input -->
+            <label for="ph">Phone Number</label>
+            <input id="ph" type="tel" placeholder="Likho 98" required>
+        </div>
+        <div>
+            <!-- The required attribute in HTML forms ensures a field must be filled before submitting. -->
+            <label for="email">Active email</label>
+            <input id="email" type="email" placeholder="Email kya hai?" required="true">
+        </div>
+        <div>
+            <!-- we can either write just required or required="true" -->
+            <label for="pass">Password</label>
+            <input id="pass" type="password" placeholder="Susshh! It's secret" required>
+        </div>
+        <div>
+            <label for="dob">Age?</label>
+            <input id="dob" type="date" placeholder="Ladies sorry, age batana padega!" required>
+        </div>
+        <div>
+            <label for="gender">Where do you lie in the spectrum?</label>
+            <!-- select dropdown -->
+        <select name="MFLGBTQ++" id="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+        <div>
+            <!-- `type="radio"` in the `<input>` tag allows selecting one option from a group. -->
+            <h3>Subscription Plan</h3>
+            <input type="radio" id="basic" name="subscription" value="basic">
+            <label for="basic">Basic</label>
+            <input type="radio" id="premium" name="subscription" value="premium">
+            <label for="premium">Premium</label>
+            <input type="radio" id="vip" name="subscription" value="vip">
+            <label for="vip">Vip</label>
+        </div>
+        <br>
+
+        <!-- `type="checkbox"` allows selecting multiple options independently. -->
+        <div>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">
+                <a href="terms.txt" target="_blank">I agree to the terms and conditions.</a>
+            </label>
+        </div>
+        <br>
+
+        <!-- The `<textarea>` tag creates a multi-line text input field. -->
+        <div>
+            <label for="comments"><b>Comments</b></label>
+            <br>
+            <textarea name="textcomment" id="comments" placeholder="Enter you comment here." rows="4"></textarea>
+        </div>
+
+        <!-- The `<button>` tag creates a clickable button in HTML. -->
+        <div>
+            <button type="submit">Submit</button>
+            <!-- `type="submit"` makes the `<button>` submit the form data. -->
+        </div>
+    </form>
+</body>
+</html>
