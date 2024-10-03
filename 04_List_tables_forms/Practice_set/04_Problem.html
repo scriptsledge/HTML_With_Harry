@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player's Score - Cricket</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif; /* Font family for the body */
+            margin: 0; /* Remove default margin */
+            background-color: #f0f0f0; /* Light background color */
+            color: #333; /* Darker text color */
+            display: flex; /* Flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Table Styles */
+        table {
+            width: 80%; /* Table width */
+            border-collapse: collapse; /* Merge borders */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Prevent overflow */
+            background: #fff; /* White background for the table */
+        }
+
+        /* Header Styles */
+        th {
+            background-color: #007bff; /* Blue background for header */
+            color: white; /* White text color */
+            padding: 15px; /* Padding inside header cells */
+            text-align: left; /* Align text to the left */
+            font-size: 1.2rem; /* Larger font size */
+        }
+
+        /* Cell Styles */
+        td {
+            padding: 12px; /* Padding inside data cells */
+            text-align: left; /* Align text to the left */
+            border-bottom: 1px solid #ddd; /* Light border below rows */
+        }
+
+        /* Row Hover Effect */
+        tr:hover {
+            background-color: #f1f1f1; /* Change background on hover */
+        }
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 768px) {
+            table {
+                width: 100%; /* Full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th> <!-- Corrected 'Nme' to 'Name' -->
+                <th>Score</th>
+                <th>Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Virat Kohli</td> <!-- Corrected spelling 'Kholi' to 'Kohli' -->
+                <td>150</td>
+                <td>World Cup Final - 2024</td>
+            </tr>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td>100</td>
+                <td>World Cup Final - 2024</td>
+            </tr>
+            <tr>
+                <td>Hardik Pandya</td>
+                <td>50</td>
+                <td>World Cup Final - 2024</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

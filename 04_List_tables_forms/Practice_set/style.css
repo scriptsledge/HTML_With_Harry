@@ -1,0 +1,106 @@
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  margin: 0;
+  background: linear-gradient(135deg, #e0f7fa, #f0f0f0); /* Vibrant gradient background */
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2.5rem 0;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+/* Form styles */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for the form */
+  gap: 1.5rem; /* Spacing between form elements */
+  max-width: 800px; /* Maximum width of the form */
+  margin: 0 auto; /* Centering the form */
+  padding: 3rem; /* Padding around the form */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for form */
+  border-radius: 1rem; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+form:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Labels */
+label {
+  font-weight: 600; /* Bold text for labels */
+  color: #2c3e50; /* Darker color for contrast */
+  font-size: 1.1rem; /* Slightly larger font size */
+}
+
+/* Input, Select, and Textarea Styles */
+input,
+select,
+textarea {
+  padding: 1.2rem; /* Padding inside inputs */
+  border: none; /* Remove border */
+  border-radius: 0.75rem; /* Rounded corners */
+  font-size: 1rem; /* Consistent font size */
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for inputs */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Inner shadow */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Transition effects */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: rgba(255, 255, 255, 1); /* Brighter background on focus */
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Textarea */
+textarea {
+  min-height: 120px; /* Minimum height for textarea */
+}
+
+/* Improved Placeholder Text Styles */
+input::placeholder,
+textarea::placeholder {
+  color: #7f8c8d; /* Darker color for better visibility */
+  font-style: italic; /* Italic style for placeholder */
+  font-size: 1rem; /* Consistent font size for placeholder */
+}
+
+/* Button Styles */
+button {
+  padding: 1rem 2.5rem; /* Padding inside button */
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Gradient background for button */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 1rem; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.1rem; /* Font size */
+  box-shadow: 0 7px 20px rgba(0, 123, 255, 0.3); /* Soft shadow */
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  justify-self: end; /* Align button to the right */
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2980b9, #1c6ea6); /* Darker gradient on hover */
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.5); /* Deeper shadow on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  form {
+      grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+  }
+
+  button {
+      justify-self: center; /* Center button on smaller screens */
+  }
+}

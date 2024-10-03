@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghoomo.com - Ghooomooo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Travel Booking Form</h1>
+    <form action="/submit.php" method="post">
+        <!-- Name Field -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Naam Kya Hai?" required aria-label="Name">
+
+        <!-- Email Field -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email.." required aria-label="Email">
+
+        <!-- Phone Field -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone" required aria-label="Phone Number">
+
+        <!-- Destination Selection -->
+        <label for="destination">Destination</label>
+        <select id="destination" name="destination" required aria-label="Destination">
+            <option value="" selected disabled>Kahan Ghoona Hai?</option>
+            <option value="kashmir">Bharat Ka Taj</option>
+            <option value="bali">Indoneasia</option>
+            <option value="nepal">Nepal</option>
+        </select>
+
+        <!-- Date Field -->
+        <label for="date">Dinaank?</label>
+        <input type="date" id="date" name="travel_date" required aria-label="Travel Date">
+
+        <!-- Address Textarea -->
+        <label for="address">Pata</label>
+        <textarea id="address" name="address" placeholder="Aapka Nivaas Sthal?" required aria-label="Address"></textarea>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button> <!-- Changed to a button element for better semantics -->
+    </form>
+</body>
+</html>

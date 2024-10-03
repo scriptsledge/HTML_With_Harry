@@ -6,6 +6,14 @@
     <title>Video - HTML</title>
 </head>
 <body>
-    <video src="video.mp4" autoplay controls></video>
+    <!-- if you want to autoplay video it must be muted as well -->
+    <video src="video.mp4" autoplay muted loop preload="auto" controls width="740">Jab video play nahi ho payega to ye text dekhega
+    </video>
+
+    <!-- another way to write the same -->
+    <video autoplay muted loop preload="auto" controls width="740">
+        <source src="video.mp4" type="video/mp4">
+        Jab video play nahi ho payega to ye text dekhega
+    </video>
 </body>
 </html>
