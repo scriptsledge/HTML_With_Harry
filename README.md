@@ -14,7 +14,7 @@ The projects are organized into different folders according to the chapters and 
 To run the projects:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/web-development-projects.git
+   git clone https://github.com/scriptsledge/HTML_With_Harry.git
    ```
 2. Navigate to the project folder of your choice.
 3. Open the HTML file in your browser to view the project.
